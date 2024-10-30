@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logo web.jpeg" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="listas" class="py-3">
+                    <h2 class="text-center">Listas</h2>
+                    <h3>Listas Ordenadas de Mejores Armas del Warzone</h3>
+                    <ol>
+                        <li>Dtir</li>
+                        <li>Static</li>
+                        <li>Kar</li>
+                        <li>MCW</li>
+                    </ol>
+                    <h3>Listas Desordenadas de Países Europeos</h3>
+                    <ul>
+                        <li>España</li>
+                        <li>Francia</li>
+                        <li>Alemania</li>
+                        <li>Italia</li>
+                    </ul>
+                    <h3>Listas Ordenadas de varios niveles de armas</h3>
+                    <ol>
+                        <li>Tipos de armas
+                            <ol>
+                                <li>Fusiles de asalto
+                                    <ol>
+                                        <li>M4A1</li>
+                                        <li>Scar</li>
+                                    </ol>
+                                </li>
+                                <li>Subfusiles
+                                    <ol>
+                                        <li>P90</li>
+                                        <li>MP5</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h3>Listas Desordenadas de varios niveles de animales</h3>
+                    <ul>
+                        <li>Tipos de animales
+                            <ul>
+                                <li>Mamíferos
+                                    <ul>
+                                        <li>Perro</li>
+                                        <li>Gato</li>
+                                    </ul>
+                                </li>
+                                <li>Reptiles
+                                    <ul>
+                                        <li>Serpiente</li>
+                                        <li>Lagarto</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Listas Ordenadas de varios niveles Customizada de streamers</h3>
+                    <ol class="customord">
+                        <li>Tipos de streamers
+                            <ol>
+                                <li>Videojuegos
+                                    <ol>
+                                        <li>Willyrex</li>
+                                        <li>TheGrefg</li>
+                                    </ol>
+                                </li>
+                                <li>Vlogs
+                                    <ol>
+                                        <li>Viviendoenlacalle</li>
+                                        <li>LaCapital</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h3>Listas Desordenadas de varios niveles Customizada de páginas de PCs</h3>
+                    <ul class = "customdes">
+                        <li>Páginas webs de PCs
+                            <ul>
+                                <li>PcComponentes
+                                    <ul>
+                                        <li>Hardware</li>
+                                        <li>Software</li>
+                                    </ul>
+                                </li>
+                                <li>Coolmod
+                                    <ul>
+                                        <li>PCGamers</li>
+                                        <li>PCExtreme</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Listas Desordenadas de varios niveles Customizada con iconos sobre los corazones</h3>
+                    <ul class = "customico">
+                        <li>Tipos de corazones
+                            <ul>
+                                <li>Persona alegre
+                                    <ul>
+                                        <li>Sano</li>
+                                        <li>Contento</li>
+                                    </ul>
+                                </li>
+                                <li>Persona triste
+                                    <ul>
+                                        <li>Mal estado</li>
+                                        <li>Triste</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Listas de definición sobre F1</h3>
+                    <dl class="listadefcustom">
+                        <dt>Aston Martin</dt>
+                        <dd>Coche que su velocidad es similar a la de un tractor</dd>
+                        <dt>Ferrari</dt>
+                        <dd>Coche que tiene que usar estrategias como Masterplan o Spinalla</dd>
+                        <dt>Red Bull</dt>
+                        <dd>Coche ganador que, desde que Newey se fue, se asemeja a un vehiculo del Farming Simulator </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Gonzalo Moreno</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

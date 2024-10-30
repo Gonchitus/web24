@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logo web.jpeg" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow"></main>
+        <div class="px-3">
+            <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+        </div>
+        <div class="px-3">
+            <hr>
+        </div>
+        <div class="p-3">
+            <div id="tablas" class="py-3">
+                <h2 class="text-center">TABLAS</h2>
+                <h3>Tabla con encabezado de fila (Descripciones de personas):</h3>
+                <table border="1">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Juan</td>
+                        <td>28</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>María</td>
+                        <td>35</td>
+                        <td>Barcelona</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Carlos</td>
+                        <td>22</td>
+                        <td>Valencia</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Lucía</td>
+                        <td>30</td>
+                        <td>Sevilla</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Pedro</td>
+                        <td>27</td>
+                        <td>Zaragoza</td>
+                    </tr>
+                </table>
+                <h3>Tabla con encabezado de columna (Descripciones profesionales de personas):</h3>
+                <table border="1">
+                    <tr>
+                        <th>ID</th>
+                        <td>101</td>
+                        <td>102</td>
+                        <td>103</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>Luis</td>
+                        <td>Laura</td>
+                        <td>Andrés</td>
+                    </tr>
+                    <tr>
+                        <th>Edad</th>
+                        <td>29</td>
+                        <td>32</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <th>Ciudad</th>
+                        <td>Buenos Aires</td>
+                        <td>Montevideo</td>
+                        <td>Santiago</td>
+                    </tr>
+                    <tr>
+                        <th>Profesión</th>
+                        <td>Ingeniero</td>
+                        <td>Abogada</td>
+                        <td>Arquitecto</td>
+                    </tr>
+                    <tr>
+                        <th>Teléfono</th>
+                        <td>555-1234</td>
+                        <td>555-5678</td>
+                        <td>555-9876</td>
+                    </tr>
+                </table>
+                <h3>Tabla con encabezado de fila y columna (Temas y categorías):</h3>
+                <table border="1">
+                    <tr>
+                        <th>Categorías ↓/Temas →</th>
+                        <th>Tecnología</th>
+                        <th>Educación</th>
+                        <th>Salud</th>
+                    </tr>
+                    <tr>
+                        <th>Innovación</th>
+                        <td>IA y Big Data</td>
+                        <td>Nuevas metodologías</td>
+                        <td>Medicina personalizada</td>
+                    </tr>
+                    <tr>
+                        <th>Desarrollo</th>
+                        <td>Software</td>
+                        <td>Programas educativos</td>
+                        <td>Nutrición</td>
+                    </tr>
+                    <tr>
+                        <th>Impacto</th>
+                        <td>Automatización</td>
+                        <td>Formación continua</td>
+                        <td>Prevención</td>
+                    </tr>
+                    <tr>
+                        <th>Tendencias</th>
+                        <td>Realidad virtual</td>
+                        <td>Educación en línea</td>
+                        <td>Salud mental</td>
+                    </tr>
+                    <tr>
+                        <th>Futuro</th>
+                        <td>Internet de las cosas</td>
+                        <td>Gamificación</td>
+                        <td>Biotecnología</td>
+                    </tr>
+                </table>
+                <h3>Tabla con combinación de filas y columnas (Temas generales):</h3>
+                <table border="1">
+                    <tr>
+                        <td rowspan="3">Tecnología</td>
+                        <td>Ciberseguridad</td>
+                        <td>Automatización</td>
+                        <td>Hardware</td>
+                    </tr>
+                    <tr>
+                        <td>Realidad Aumentada</td>
+                        <td>IA</td>
+                        <td>Robótica</td>
+                    </tr>
+                    <tr>
+                        <td>Blockchain</td>
+                        <td>Internet de las Cosas</td>
+                        <td>Software</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Servidor</th>
+                    </tr>
+                    <tr>
+                        <td>Salud</td>
+                        <td>Telemetría</td>
+                        <td>Biotecnología</td>
+                        <td>Hábitos saludables</td>
+                    </tr>
+                    <tr>
+                        <td>Economía</td>
+                        <td>Criptoeconomía</td>
+                        <td>Desigualdad social</td>
+                        <td>Mercados emergentes</td>
+                    </tr>
+                </table>
+                <h3>Tabla con diseño diferente en filas pares e impares (Cataluña):</h3>
+                <table class="striped">
+                    <tr>
+                        <td>Tema</td>
+                        <td>Descripción</td>
+                        <td>Ejemplo</td>
+                        <td>Importancia</td>
+                    </tr>
+                    <tr>
+                        <td>Geografía</td>
+                        <td>Situada en el noreste de España</td>
+                        <td>Barcelona, Gerona, Lérida, Tarragona</td>
+                        <td>Región estretégica en el Mediterráneo</td>
+                    </tr>
+                    <tr>
+                        <td>Idioma</td>
+                        <td>Catalán y español</td>
+                        <td>Catalán como lengua cooficial</td>
+                        <td>Clave en la identidad cultural</td>
+                    </tr>
+                    <tr>
+                        <td>Economía</td>
+                        <td>Industria, turismo, tecnología</td>
+                        <td>Empresas como SEAT, turismo en la Costa Brava</td>
+                        <td>Motor económico de España</td>
+                    </tr>
+                    <tr>
+                        <td>Cultura</td>
+                        <td>Tradiciones, arte y arquitectura</td>
+                        <td>Castellers, Gaudí, Sagrada Familia</td>
+                        <td>Rica herencia cultural</td>
+                    </tr>
+                    <tr>
+                        <td>Política</td>
+                        <td>Autonomía dentro de España</td>
+                        <td>Generalitat de Cataluña</td>
+                        <td>Debates sobre independencia</td>
+                    </tr>
+                </table>
+                <h3>Horario:</h3>
+                <table class="horario" border="1">
+                    <tr>
+                        <th class="cursiva etiquetadam" colspan="6">S1DAM</th>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">/¬\</th>
+                        <td class="letracolor centrado conttemp">Lunes</td>
+                        <td class="letracolor centrado conttemp">Martes</td>
+                        <td class="letracolor centrado conttemp">Miércoles</td>
+                        <td class="letracolor centrado conttemp">Jueves</td>
+                        <td class="letracolor centrado conttemp">Viernes</td>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">8:15 <br /> 9:10</th>
+                        <td class="bdd centrado letraclases conttemp" rowspan="2">BDD <br /> León Di, JuEf <br /> (1 B-302)</td>
+                        <td class="prog centrado letraclases conttemp" rowspan="2">PROG <br /> León Di, JuEf <br /> (1 B-302)
+                        </td>
+                        <td class="sisi centrado letraclases conttemp" rowspan="2">SISI <br /> Mart Ru, To <br /> (1 B-302)</td>
+                        <td class="lmsg centrado letraclases conttemp">LMSG <br /> Puli. Mo, FrJo <br /> (1 B-302)</td>
+                        <td class="pimd centrado letraclases conttemp">PIMD <br /> León Di, JuEf <br /> (1 B-302)</td>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">9:10 <br /> 10:05</th>
+                        <td class="ipcg centrado letraclases conttemp">IPCG <br /> Guti Sa, JoÁn <br /> (1 B-302)</td>
+                        <td class="ende centrado letraclases conttemp">ENDE <br /> Polo Or, Ed <br /> (1 B-302)</td>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">10:05 <br /> 11:00</th>
+                        <td class="sasp centrado letraclases conttemp">SASP <br /> Gali. Cr, Di <br /> (1 B-302)</td>
+                        <td class="dasp centrado letraclases conttemp">DASP <br /> Gali. Cr, Di <br /> (1 B-302)</td>
+                        <td class="ipe centrado letraclases conttemp">IPE- <br /> Marín Ca, RoMa <br /> (1 B-302)</td>
+                        <td class="bdd centrado letraclases conttemp">BDD <br /> León Di, JuEf <br /> (1 B-302)</td>
+                        <td class="ipe centrado letraclases conttemp">IPE- <br /> Marín Ca, RoMa <br /> (1 B-302)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <th class="letracolor" colspan="5">recreo</th>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">11:30 <br /> 12:25</th>
+                        <td class="ipe centrado letraclases conttemp">IPE- <br /> Marín Ca, RoMa <br /> (1 B-302)</td>
+                        <td class="sisi centrado letraclases conttemp" rowspan="2">SISI <br /> Mart Ru, To <br /> (1 B-302)</td>
+                        <td class="lmsg centrado letraclases tamanoclases conttemp" rowspan="2">LMSG Puli. Mo, FrJo <br /> (1
+                            B-302)</td>
+                        <td class="bdd centrado letraclases conttemp">BDD <br /> León Di, JuEf <br /> (1 B-302)</td>
+                        <td class="prog centrado letraclases conttemp" rowspan="2">PROG <br /> León Di, JuEf <br /> (1 B-302)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">12:25 <br /> 13:20</th>
+                        <td class="prog centrado letraclases conttemp" rowspan="2">PROG <br /> León Di, JuEf <br /> (1 B-302)
+                        </td>
+                        <td class="ende centrado letraclases conttemp">ENDE <br /> Polo Or, Ed <br /> (1 B-302)</td>
+                    </tr>
+                    <tr>
+                        <th class="letracolor conttemp2">13:20 <br /> 14:15</th>
+                        <td class="bdd centrado letraclases conttemp">BDD <br /> León Di, JuEf <br /> (1 B-302)</td>
+                        <td class="ipcg centrado letraclases conttemp">IPCG <br /> Guti Sa, JoÁn <br /> (1 B-302)</td>
+                        <td class="sisi centrado letraclases conttemp">SISI <br /> Mart Ru, To <br /> (1 B-302)</td>
+                        <td class="dasp centrado letraclases conttemp">DASP <br /> Gali. Cr, Di <br /> (1 B-302)</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Gonzalo Moreno</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

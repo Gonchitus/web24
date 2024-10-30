@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logo web.jpeg" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home" class="py-3">
+                    <h2 class="text-center">Enlaces</h2>
+                    <p>Los enlaces se realizan con la etiqueta <span class="etiqueta">a</span> e indicamos donde viajar
+                        en el atributo <span class="atributo">href</span>
+                    </p>
+                    <p>Enlace a una página nuestra: <br />
+                        <a href="index.html"><span class="enlaces">Ir a la página principal</span></a>
+                    </p>
+                    <p>Enlace a una página de internet: <br />
+                        <a href="https://tiktok.com"><span class="enlaces">Ir a TikTok</span></a>
+                    </p>
+                    <p>Enlace a una página de internet desde una imagen: <br />
+                        <a href="https://openai.com"><img src="img/logo-ChatGPT.png" alt="Chat GPT"></a>
+                    </p>
+                    <p>Enlace a una página en una nueva pestaña: <br />
+                        <a href="https://fortnite.com" target="_blank"><span class="enlaces">Ir a la página de
+                                Fortnite</span></a> <br />
+                        (Esto se ha logrado con los atributos <span class="atributo">target</span> y <span
+                            class="atributo">_blank</span>)
+                    </p>
+                    <p>Enlace a una dirección de correo: <br />
+                        <a href="mailto:gmlorenzo06@gmail.com"><span class="enlaces">Sugerencia a mi persona</span></a>
+                    </p>
+                    <p>Enlace para ejecutar un programa javascript: <br />
+                        <a href="javascript:alert('Julio: Te pillé!')"><span class="enlaces">Ejecutar</span></a>
+                    </p>
+                    <p>Descargar un archivo: <br />
+                        <a href="descargas/Examen709803.zip"><span class="enlaces">Pulsa para descargar</span></a>
+                    </p>
+                    <p>Marcador para ir a cualquier zona de la web: <br />
+                        <a href=><img src="img/Arriba.png" alt="Volver al principio"></a>
+                    </p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Gonzalo Moreno</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
