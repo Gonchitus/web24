@@ -4,7 +4,7 @@ body {
 
 * {
     box-sizing: border-box;
-    color: rgb(64, 232, 2);
+    color: white;
 }
 
 /* For desktop: */
@@ -417,5 +417,5 @@ section img:hover{
 }
 .photos{
     margin: 0 auto;
-    width: 60%;
+    width: 56%;
 }
