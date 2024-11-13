@@ -270,6 +270,12 @@ h1 {
     width: 80%;
     margin: 0 auto;
 }
+.letracolor2{
+    color: yellow;
+}
+.letracolor3{
+    color: red;
+}
 .bdd{
     background-color: #82fb91;
     
